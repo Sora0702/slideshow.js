@@ -9,9 +9,10 @@ let intervalId;
 function displayTime() { 
   intervalId = setInterval(() => {
     const currentTime = new Date(Date.now() - startTime + stopTime);
-    const seconds = String(currentTime.getSeconds()).padStart(4, "0");
-    count.textContent = seconds.slice(0, 1) + ":" + seconds.slice(1, 2) + ":" + seconds.slice(2, 3) + ":" + seconds.slice(3, 4);
-  }, 1000);
+    const seconds = String(currentTime.getSeconds()).padStart(3, "0");
+    const ms = String(currentTime.getMilliseconds()).slice(-1);
+    count.textContent = seconds.slice(0, 1) + ":" + seconds.slice(1, 2) + ":" + seconds.slice(2, 3) + ":" + ms;
+  }, 10);
 }
 
 start.addEventListener("click", ()=> {
