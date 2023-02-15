@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>電卓</title>
+    <link rel="stylesheet" href="main2.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <input readonly id="result" type="text" value="0">
+    <div>
+      <button onclick="displayNumber(this.innerHTML)">7</button>
+      <button onclick="displayNumber(this.innerHTML)">8</button>
+      <button onclick="displayNumber(this.innerHTML)">9</button>
+      <button onclick="displayOperator(this.innerHTML)">+</button>
+    </div>
+    <div>
+      <button onclick="displayNumber(this.innerHTML)">4</button>
+      <button onclick="displayNumber(this.innerHTML)">5</button>
+      <button onclick="displayNumber(this.innerHTML)">6</button>
+      <button onclick="displayOperator(this.innerHTML)">-</button>
+    </div>
+    <div>
+      <button onclick="displayNumber(this.innerHTML)">1</button>
+      <button onclick="displayNumber(this.innerHTML)">2</button>
+      <button onclick="displayNumber(this.innerHTML)">3</button>
+      <button onclick="displayOperator(this.innerHTML)">*</button>
+    </div>
+    <div>
+      <button onclick="displayNumber(this.innerHTML)">0</button>
+      <button onclick="displayNumber(this.innerHTML)">00</button>
+      <button onclick="displayNumber(this.innerHTML)">.</button>
+      <button onclick="displayOperator(this.innerHTML)">/</button>
+    </div>
+    <div>
+      <button class="big-button" onclick="allClear()">AC</button>
+      <button class="big-button" onclick="equal()">=</button>
+    </div>
+    <script src="main2.js"></script>
+  </body>
+</html>
